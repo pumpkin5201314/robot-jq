@@ -29,23 +29,16 @@ function addDom(who, val) {
     $('.content-box').scrollTop(scrollHeight - innerHeight);
 }
 
+ // var paras = "key= 72a5507158ff4ca5aa05043d4c24ce55&info="+sayContent;
 
 function getData(val) {
-    $.ajax({
-        url: 'http://temp.duyiedu.com/api/chat?',
-        method: 'GET',
-        dataType: 'json',
-        data: {
-            // appkey: 'dongmeiqi_1547441744650',
-            text: val
-        },
-        success: function (res) {
-            
-
-            
-                addDom('robot', res.text);
-           
-        }
-    })
+        var paras = "key= 72a5507158ff4ca5aa05043d4c24ce55&info="+val;
+         ajax('POST',"http://www.tuling123.com/openapi/api",success, paras, true)
+          function success(data){
+            // console.log(data)
+          da=eval("("+data+")")
+          addDom('robot', da.text);
+          }
+    
 }
 init()
