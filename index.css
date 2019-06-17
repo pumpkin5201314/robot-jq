@@ -10,8 +10,8 @@ html,body{
 	height:100%;
 }
 .wrapper{
-	width:6.5rem;
-	height:10rem;
+	width:600px;
+	height:100%;
 	margin:0 auto;
 	background-color:rgba(100,112,154,0.2);
 	border-radius: 10px;
@@ -33,7 +33,7 @@ p{
 .content-box{
 	overflow-y:auto;
 	width:100%;
-	/* height: calc(100% - 90px) */
+	height: calc(100% - 90px)
 }
 
 .avitor{
@@ -53,6 +53,15 @@ p{
 	width: calc(100% - 10px);
 	 
 }
+.robot{
+	float:left;
+	margin:10px;
+	width: calc(100% - 10px);
+	 
+
+	 
+
+}
 
 .mine .avitor{
 	float:right;
@@ -64,7 +73,7 @@ p{
 	background-color: rgba(112,182,163,0.5);
 	margin-right: 15px;
 	position: relative;
-	 
+
 }
 .mine .text::after{
 	content:"";
@@ -79,21 +88,10 @@ p{
 	border-left-color: rgba(112,182,163,0.5);
 	 
 }
-.robot{
-	float:left;
-	margin:10px;
-	 
- 
-}
-
 .robot .text{
-	float:right;
 	background-color: rgba(81,173,93,0.5);
 	margin-left: 15px;
 	position: relative;
-	
-	 
-	
 
 	
 }
@@ -120,37 +118,22 @@ p{
 
 
 .text{
-	max-width:4rem;
+	max-width:250px;
 	border:1px solid #ddd;
 	display: inline-block;
 	padding:10px;
 	border-radius: 10px;
-	font-size: 16px;
-	 
 	 
 
 }
 .input-box{
-	height:70px;
-	/* width:rem; */
+	height:50px;
+	width:100%;
 	background-color:rgba(191,155,255,0.5);
 	line-height: 50px;
 	text-align: center;
-	overflow: hidden;
 
 }
-#inp{
-	padding-left: 4px;
-	font-size: 16px;
-	width:60%;
-	height:60%;
-	border: 1px solid #ccc;
-	border-radius: 6px;
-
-	margin-bottom:10px;
-
-}
-
 #inp{
 	padding-left: 4px;
 	font-size: 16px;
@@ -161,6 +144,7 @@ p{
 	/*margin:10px auto;*/
 
 }
+
 #submit{
 	border-radius: 5px;
 	font-size: 16px;
@@ -186,5 +170,4 @@ input::placeholder{
 
 
 }
-
 

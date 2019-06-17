@@ -1,33 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-<head>
-	<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+<head> 
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0 ,initial-scale=1.0" id="view"/>
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
 	<title>小琴robot</title>
 	<link rel="stylesheet" href="./index.css">
-	<script> 
-            (function(doc,win,designWidth){
-                var html=doc.documentElement;
-                function refreshRem(){
-                    var clientWidth=html.clientWidth;
-                    if(clientWidth>=designWidth){
-                        html.style.fontSize="100px";//给宽度一个最大值，如果设备的宽度已经超过设计稿的尺寸了，统一按一个值去算。
-						 
-                    }else{
-                       
-					    // html.style.fontSize=16*clientWidth/375+'px';//以iphone6字体大小为16px为基准
-                        html.style.fontSize=100*(clientWidth/designWidth)+'px';//
-                    }
-                };
-                doc.addEventListener('DOMContentLoaded',refreshRem);//dom加载完执行事件
-				 
-
-	        })(document,window,750);
-
-    </script>
 </head>
 <body>
 	<div class="wrapper">
@@ -46,6 +25,8 @@
 	</div>
 
 	<script src="./jquery-3.3.1.min.js"></script>
+	<script src="./ajax.js"></script>
+
 	<script src="./index.js"></script>
 </body>
 </html>
